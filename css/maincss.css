@@ -1,0 +1,280 @@
+
+/* font-family: 'Gloock',
+serif;
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Shantell Sans',
+cursive;  */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+a { display: inline-block;
+list-style: none;
+text-decoration: none;}
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+body {
+    padding-top: 20px;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    font-family: 'Shantell Sans'
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+.logo {
+    margin-right: 20px
+    
+    
+    ;
+}
+.imgLogo {
+    width: 300px;
+    height: 200px;
+}
+.imgLogo:hover {
+    width: 320px;
+    height: 220px;
+}
+
+.headerStyle {
+    display: flex;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigationItem {
+    font-size:24px;
+    color: rgb(237, 253, 11);
+}
+.navigationItem:nth-child(2) {
+    color: blue;
+}
+.navigationItem:nth-child(3) {
+    color: rebeccapurple;
+}
+
+.navigationItem:not(:last-child) {
+    margin-right: 20px ;
+}
+.navItemLink {
+    color: inherit;
+}
+
+.navItemLink:hover {
+color: white;
+font-size: 40px;
+transition: font-size 2s;
+}
+
+.imgHeader {
+width: 300px;
+height: 200px;
+border-radius: 25%;
+}
+
+.mainText
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: rgba(241, 241, 241, 0);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.005);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* footer text
+*/
+.footerText {
+font-size: 30px;
+color: greenyellow
+}
+.footer {
+    padding-top: 35px;
+    padding-bottom: 10px;
+border-top: 5px dashed rgb(162, 0, 255);
+border-top-left-radius: 35%;
+}
+.footerMargin {
+    margin-bottom: 20px;
+}
+
+.e2 {
+    margin-right: 23px;
+}
+
+.hoverClick {
+    display: inline-block;
+    color: blanchedalmond;
+    font-size: 20px;
+    border: 2px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+}
+.hoverClick:hover {
+cursor: none;
+
+}
+
+.e1:nth-child(1) {
+    transform: scale(0.5);
+    transform: translateX(2100px);
+}
+.e1:nth-child(2) {
+    transform: scale(0.5);
+    transform: translateY(2100px);
+}
+
+
+
+
+/* hover effect's */
+.hoverClick:hover + .mainText .e1:nth-child(1) {
+    color: red;
+    transform: scale(1);
+    transition: color, transform;
+    transition-delay: 1000ms, 1000ms ;
+    transition-duration: 1000ms, 1000ms;
+    transition-timing-function: linear, linear;
+}
+.hoverClick:hover + .mainText .e1:nth-child(2) {
+    color: rgb(255, 255, 0);
+    transform: none;
+    transition: color, transform;
+    transition-delay: 1500ms, 1500ms;
+        transition-duration: 1000ms, 1500ms;
+        transition-timing-function: linear, 1500ms);
+}
+.hoverClick:hover+.mainText .e1:nth-child(3){
+    color: rgb(29, 151, 35);
+        transition: color;
+        transition-delay: 2000ms;
+            transition-duration: 1000ms;
+            transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(4) {
+    color: rgb(43, 255, 0);
+    transition: color;
+        transition-delay: 2500ms;
+            transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(5){
+    color: rgb(0, 255, 217);
+    transition: color;
+    transition-delay: 3000ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(6){
+    color: rgb(0, 187, 255);
+    transition: color;
+        transition-delay: 3500ms;
+            transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(7) {
+    color: rgb(0, 106, 255);
+    transition: color;
+    transition-delay: 4000ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(8){
+    color: rgb(0, 26, 255);
+    transition: color;
+    transition-delay: 4500ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(9){
+    color: rgb(255, 0, 247);
+    transition: color;
+        transition-delay: 4500ms;
+            transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(10){
+    color: rgb(255, 179, 0);
+    transition: color;
+    transition-delay: 4000ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(11){
+    color: rgb(255, 0, 76);
+    transition: color;
+    transition-delay: 3000ms;
+        transition-duration: 3500ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(12){
+    color: rgb(112, 120, 45);
+    transition: color;
+            transition-delay: 3000ms;
+                transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(13) {
+    color: rgba(237, 255, 244, 0.179);
+    transition: color;
+            transition-delay: 2500ms;
+                transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(14){
+    color: rgb(255, 0, 0);
+    transition: color;
+        transition-delay: 2000ms;
+            transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(15) {
+    color: rgb(0, 255, 110);
+    transition: color;
+    transition-delay: 1500ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
+.hoverClick:hover+.mainText .e1:nth-child(16) {
+    color: rgb(60, 0, 255);
+    transition: color;
+    transition-delay: 1000ms;
+        transition-duration: 1000ms;
+        transition-timing-function: linear;
+}
